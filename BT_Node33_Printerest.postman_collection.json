@@ -1,0 +1,546 @@
+{
+	"info": {
+		"_postman_id": "0f86b77b-3e29-40df-8a4b-627e766ff34c",
+		"name": "BT_Node33_Printerest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28604158"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Dang Ky",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"tai@gmail.com\",\r\n    \"mat_khau\":\"123456\",\r\n    \"ho_ten\":\"Tai Thanh\",\r\n    \"tuoi\":27\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/api/auth/dangKi",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"dangKi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dang Nhap",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"sang@example.com\",\r\n    \"mat_khau\":\"matkhau10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/api/auth/dangNhap",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"dangNhap"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "getDanhSachNguoiDung",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEyLCJlbWFpbCI6InNhbmdAZ21haWwuY29tIiwibWF0X2toYXUiOiIiLCJob190ZW4iOiJQaGFuIFRoYW5oIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NjY1MDAxNSwiZXhwIjoxNzI4MjA3NjE1fQ.jKU0pxhcnfOP9jE4axQj1Sg_6zbaxjpiMPLnse6UDVk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/api/user/getDanhSachNguoiDung",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"getDanhSachNguoiDung"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDanhSachAnhDaLuuNguoiDungId",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEyLCJlbWFpbCI6InNhbmdAZ21haWwuY29tIiwibWF0X2toYXUiOiIiLCJob190ZW4iOiJQaGFuIFRoYW5oIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NjY1MDAxNSwiZXhwIjoxNzI4MjA3NjE1fQ.jKU0pxhcnfOP9jE4axQj1Sg_6zbaxjpiMPLnse6UDVk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/api/user/getDanhSachAnhDaLuuNguoiDungId/1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"getDanhSachAnhDaLuuNguoiDungId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getNguoiDungId",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEyLCJlbWFpbCI6InNhbmdAZ21haWwuY29tIiwibWF0X2toYXUiOiIiLCJob190ZW4iOiJQaGFuIFRoYW5oIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NjY1MDAxNSwiZXhwIjoxNzI4MjA3NjE1fQ.jKU0pxhcnfOP9jE4axQj1Sg_6zbaxjpiMPLnse6UDVk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/api/user/getNguoiDungId/1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"getNguoiDungId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getDanhSachAnhDaTaoNguoiDungId",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEyLCJlbWFpbCI6InNhbmdAZ21haWwuY29tIiwibWF0X2toYXUiOiIiLCJob190ZW4iOiJQaGFuIFRoYW5oIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NjY1MDAxNSwiZXhwIjoxNzI4MjA3NjE1fQ.jKU0pxhcnfOP9jE4axQj1Sg_6zbaxjpiMPLnse6UDVk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/api/user/getDanhSachAnhDaTaoNguoiDungId/1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"getDanhSachAnhDaTaoNguoiDungId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "putNguoiDungId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEyLCJlbWFpbCI6InNhbmdAZ21haWwuY29tIiwibWF0X2toYXUiOiIiLCJob190ZW4iOiJQaGFuIFRoYW5oIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NjY1MDAxNSwiZXhwIjoxNzI4MjA3NjE1fQ.jKU0pxhcnfOP9jE4axQj1Sg_6zbaxjpiMPLnse6UDVk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"thanh@gmail.com\",\r\n    \"mat_khau\": \"123456\",\r\n    \"ho_ten\": \"Dai Thanh\",\r\n    \"tuoi\": 19\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/api/user/putNguoiDungId/1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"putNguoiDungId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Image",
+			"item": [
+				{
+					"name": "getDanhSachHinhAnh",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEyLCJlbWFpbCI6InNhbmdAZ21haWwuY29tIiwibWF0X2toYXUiOiIiLCJob190ZW4iOiJQaGFuIFRoYW5oIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NjY1MDAxNSwiZXhwIjoxNzI4MjA3NjE1fQ.jKU0pxhcnfOP9jE4axQj1Sg_6zbaxjpiMPLnse6UDVk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/api/image/getDanhSachHinhAnh",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"image",
+								"getDanhSachHinhAnh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "timHinhAnhTheoTen",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "tenHinh",
+								"value": "n",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/api/image/timHinhAnhTheoTen?tenHinh=n",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"image",
+								"timHinhAnhTheoTen"
+							],
+							"query": [
+								{
+									"key": "tenHinh",
+									"value": "n"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getHinhAnhId+nguoiTao",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/image/getHinhAnhId/1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"image",
+								"getHinhAnhId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBinhLuanHinhAnhId",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEyLCJlbWFpbCI6InNhbmdAZ21haWwuY29tIiwibWF0X2toYXUiOiIiLCJob190ZW4iOiJQaGFuIFRoYW5oIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NjY1MDAxNSwiZXhwIjoxNzI4MjA3NjE1fQ.jKU0pxhcnfOP9jE4axQj1Sg_6zbaxjpiMPLnse6UDVk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/api/image/getBinhLuanHinhAnhId/1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"image",
+								"getBinhLuanHinhAnhId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getLuuHinhAnhId",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEyLCJlbWFpbCI6InNhbmdAZ21haWwuY29tIiwibWF0X2toYXUiOiIiLCJob190ZW4iOiJQaGFuIFRoYW5oIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NjY1MDAxNSwiZXhwIjoxNzI4MjA3NjE1fQ.jKU0pxhcnfOP9jE4axQj1Sg_6zbaxjpiMPLnse6UDVk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/api/image/getLuuHinhAnhId/1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"image",
+								"getLuuHinhAnhId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postBinhLuanAnh",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEyLCJlbWFpbCI6InNhbmdAZ21haWwuY29tIiwibWF0X2toYXUiOiIiLCJob190ZW4iOiJQaGFuIFRoYW5oIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NjY1MDAxNSwiZXhwIjoxNzI4MjA3NjE1fQ.jKU0pxhcnfOP9jE4axQj1Sg_6zbaxjpiMPLnse6UDVk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nguoi_dung_id\": 1,\r\n    \"hinh_id\": 1,\r\n    \"noi_dung\": \"ảnh đẹp\",\r\n    \"ngay_binh_luan\": \"2022-12-25\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/api/image/postBinhLuanAnh",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"image",
+								"postBinhLuanAnh"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postLuuHuyLuuAnh",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEyLCJlbWFpbCI6InNhbmdAZ21haWwuY29tIiwibWF0X2toYXUiOiIiLCJob190ZW4iOiJQaGFuIFRoYW5oIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NjY1MDAxNSwiZXhwIjoxNzI4MjA3NjE1fQ.jKU0pxhcnfOP9jE4axQj1Sg_6zbaxjpiMPLnse6UDVk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nguoi_dung_id\": 1,\r\n    \"hinh_id\": 1,\r\n    \"ngay_luu\": \"2023-10-15\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/api/image/postLuuHuyLuuAnh",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"image",
+								"postLuuHuyLuuAnh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postHinhAnh",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEyLCJlbWFpbCI6InNhbmdAZ21haWwuY29tIiwibWF0X2toYXUiOiIiLCJob190ZW4iOiJQaGFuIFRoYW5oIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NjY1MDAxNSwiZXhwIjoxNzI4MjA3NjE1fQ.jKU0pxhcnfOP9jE4axQj1Sg_6zbaxjpiMPLnse6UDVk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ten_hinh",
+									"value": "Cool Luffy",
+									"type": "text"
+								},
+								{
+									"key": "mo_ta",
+									"value": "Luffy pro max",
+									"type": "text"
+								},
+								{
+									"key": "nguoi_dung_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "fileUpload",
+									"type": "file",
+									"src": "/C:/Users/TRUNG-PC/Desktop/onePiece.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/api/image/postHinhAnh",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"image",
+								"postHinhAnh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteHinhAnhId",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Im5ndW9pX2R1bmdfaWQiOjEyLCJlbWFpbCI6InNhbmdAZ21haWwuY29tIiwibWF0X2toYXUiOiIiLCJob190ZW4iOiJQaGFuIFRoYW5oIiwidHVvaSI6MjUsImFuaF9kYWlfZGllbiI6bnVsbH0sImlhdCI6MTY5NjY1MDAxNSwiZXhwIjoxNzI4MjA3NjE1fQ.jKU0pxhcnfOP9jE4axQj1Sg_6zbaxjpiMPLnse6UDVk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nguoi_dung_id\": 1,\r\n    \"hinh_id\": 16,\r\n    \"noi_dung\": \"xóa Luffy\",\r\n    \"ngay_binh_luan\": \"2022-12-26\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/api/image/deleteHinhAnhId/16",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"image",
+								"deleteHinhAnhId",
+								"16"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "domain",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}
